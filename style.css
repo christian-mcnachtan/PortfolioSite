@@ -2,7 +2,6 @@
 
 :root{
 --primary: #348ceb;
---secondary: #FFD700;
 --primaryHover: #3CABEA;
 }
 
@@ -18,9 +17,6 @@
     font-weight:600;
 }
 
-.secondary{
-    color: #FFD700;
-}
 
 body{
     font-family: 'Arimo', sans-serif;
@@ -186,6 +182,7 @@ main section h3{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    flex-wrap:wrap;
     width:100%;
     height: 100%;
 }
@@ -210,6 +207,8 @@ main section h3{
 }
 
 
+
+
 .flex-columns .column{
     display: flex;
     flex-direction: column;
@@ -219,7 +218,7 @@ main section h3{
 
 .flex-columns .column .col1,
 .flex-columns .column .col2{
-    height:100%;
+    height:110%;
 }   
 
 .flex-columns img {
@@ -237,13 +236,14 @@ main section h3{
     padding: 15px;
     background-color: #333;
     color: white;
-    font-size: 1.1em;
-    
+    font-size: 1em;
 }
+
+
+
 
 .flex-columns .col2 h2{
     padding: 10px;
-    margin-top:-90px;
     font-size: 2.5em;
     background-color: #333;
     color: var(--primary);
@@ -255,7 +255,7 @@ main section h3{
 }
  
 .flex-columns .col2 td{
-    padding: 30px;
+    padding:10px 30px;
     font-size:1.2em;
 }
 
@@ -274,8 +274,8 @@ main section h3{
 
 
 .projects h2{
-    margin-top:50px;
-    margin-bottom: -20px;
+    margin-top:80px;
+    margin-bottom: -50px;
     padding:30px;
 }
 
@@ -296,6 +296,7 @@ main section h3{
 
 .projects img{
     border-radius: 10px;
+    
 }
 
 .contact .step{
@@ -418,11 +419,7 @@ footer  p {
 }
 
 @media(max-width: 768px) {
-    body{
-        width:100vw;
-        justify-content: center;
-        align-items: center;;
-    }
+  
 
     .navbar{
         flex-direction: column; 
@@ -439,13 +436,15 @@ footer  p {
         margin:0;
     }
 
+    .hero {
+        background: url('images/mobileHero.jpg') no-repeat center center/cover;
+
+    }
 
     .hero .content h1{
-        margin-top: 350px;
+        margin-top: 500px;
         text-shadow: 2px 2px #333;
-        margin-bottom: 10px;
         font-size: 60px;
-
     }
 
     .hero .content a{
@@ -460,8 +459,29 @@ footer  p {
         flex-direction: column;
     }
 
+    .flex-columns .row .col2{
+        height: 650px;
+    }
+
+  
+  
+
     .flex-columns .col2 h2{
         margin-top:0px;
+    }
+
+    
+
+    .projects h1{
+        font-size: 1.5em;
+        width: 95%;
+        
+    }
+
+    .projects h3{
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-bottom: -30px;
     }
 
     .contact .flex-items{
@@ -476,6 +496,14 @@ footer  p {
         visibility: visible;
         margin-bottom: 20px;
         margin-top: -70px;
+    }
+
+    .callBackForm {
+        width: 92%;
+    }
+    .contact .btn{
+        width:100%;
+        margin-bottom: -50px;
     }
 
 }
