@@ -218,7 +218,7 @@ main section h3{
 
 .flex-columns .column .col1,
 .flex-columns .column .col2{
-    height:110%;
+    height:100%;
 }   
 
 .flex-columns img {
@@ -300,7 +300,7 @@ main section h3{
 }
 
 .contact .step{
-    width:300px;
+    width:20%;
     color: #333;
     font-size: 1.1em;
 }
@@ -420,18 +420,27 @@ footer  p {
 
 @media(max-width: 768px) {
   
-
     .navbar{
         flex-direction: column; 
         height: 120px;
         padding:20px;
         z-index: 20;
         opacity: 1;
+        border-bottom: 3px solid var(--primary);
     }
     .navbar a{
         padding: 10px 10px;
         margin: 0 3px;
     }
+
+    .navbar a:hover{
+        border-bottom: var(--primaryHover) 2px solid;
+        font-size: 100%;
+        transition: 0.0s;
+    }
+  
+
+
     .hero .content {
         margin:0;
     }
@@ -457,18 +466,27 @@ footer  p {
     
     .flex-columns .row {
         flex-direction: column;
+        margin:0;
+        padding:0;
     }
 
     .flex-columns .row .col2{
         height: 650px;
+        max-width: 100%;
+        margin:0;
+        padding:0;
     }
 
-  
-  
-
-    .flex-columns .col2 h2{
-        margin-top:0px;
+    .flex-columns .col2 td{
+        padding:10px 0px;
+        font-size:1.0em;
+        
     }
+
+    .flex-columns .col2 table{
+        max-width:90%;
+    }
+  
 
     
 
@@ -482,6 +500,10 @@ footer  p {
         font-size: 1.5em;
         margin-top: 10px;
         margin-bottom: -30px;
+    }
+
+    .contact .step{
+        width:80%;
     }
 
     .contact .flex-items{
