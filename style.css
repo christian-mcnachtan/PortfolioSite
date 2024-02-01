@@ -281,6 +281,7 @@ main section h3{
 
 .projects h3{
     padding-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -432,6 +433,10 @@ footer  p {
     .navbar a{
         padding: 10px 10px;
         margin: 0 3px;
+    }
+
+    header .logo{
+        font-size: 140%;
     }
 
     .navbar a:hover{
